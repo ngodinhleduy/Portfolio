@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- TODO: replace with the font stack observed on yanzcruz.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+  </head>
+  <body>
+    <div class="preloader" data-preloader>
+      <span class="preloader__count" data-preloader-count>0</span>
+    </div>
+
+    <div class="cursor" data-cursor aria-hidden="true"></div>
+
+    <header class="nav" data-nav>
+      <a href="#top" class="nav__logo" data-magnetic>LOGO</a>
+      <nav class="nav__links">
+        <!-- TODO: nav items from source site -->
+        <a href="#work" data-magnetic>Work</a>
+        <a href="#about" data-magnetic>About</a>
+        <a href="#contact" data-magnetic>Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section" data-section>
+        <h1 class="hero__title" data-split="lines" data-immediate>
+          Placeholder headline. Replace with source copy.
+        </h1>
+        <p class="hero__sub" data-reveal data-immediate>Placeholder subtitle.</p>
+      </section>
+
+      <section id="work" class="work section" data-section>
+        <h2 class="section__label" data-reveal>Selected work</h2>
+        <ul class="work__list">
+          <!-- TODO: project cards from source site -->
+          <li class="work__item" data-reveal>
+            <div class="work__media" data-parallax="0.15"></div>
+            <div class="work__meta"><span>Project 01</span><span>Category</span></div>
+          </li>
+          <li class="work__item" data-reveal>
+            <div class="work__media" data-parallax="0.15"></div>
+            <div class="work__meta"><span>Project 02</span><span>Category</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about section" data-section>
+        <h2 class="section__label" data-reveal>About</h2>
+        <p class="about__text" data-split="lines">Placeholder about copy.</p>
+      </section>
+
+      <section id="contact" class="contact section" data-section>
+        <a href="mailto:hello@example.com" class="contact__link" data-split="chars" data-magnetic>hello@example.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026</span>
+      <span data-local-time>--:--</span>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

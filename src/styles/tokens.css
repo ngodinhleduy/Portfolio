@@ -1,0 +1,35 @@
+/* Design tokens. Values are provisional until the source site can be inspected. */
+:root {
+  --color-bg: #0a0a0a;
+  --color-fg: #f5f5f5;
+  --color-muted: #8a8a8a;
+  --color-line: rgba(255, 255, 255, 0.12);
+  --color-accent: #ffffff;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: var(--font-sans);
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: clamp(1.25rem, 2vw, 1.75rem);
+  --text-xl: clamp(2rem, 5vw, 4rem);
+  --text-display: clamp(3rem, 10vw, 9rem);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-6: 4rem;
+  --space-8: 8rem;
+  --gutter: clamp(1rem, 4vw, 3rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast: 0.3s;
+  --dur-base: 0.8s;
+  --dur-slow: 1.4s;
+
+  --radius: 0;
+  --nav-h: 72px;
+}
